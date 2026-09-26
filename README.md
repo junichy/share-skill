@@ -1,18 +1,22 @@
-# blog-agent
+# share-skill
 
-A standalone Codex skill for blog article research, writing, revision, SEO
-diagnosis, and draft handoff. The skill instructions are in [SKILL.md](SKILL.md).
+A repository for sharing Codex skills. It currently contains
+[blog-agent](.agents/skills/blog-agent/SKILL.md), for blog article research,
+writing, revision, SEO diagnosis, and draft handoff.
 
 ## Install
 
-Clone this repository as a skill folder:
+Clone the repository, then link the skill into your user skill directory:
 
 ```sh
-git clone https://github.com/junichy/blog-agent-standalone.git ~/.agents/skills/blog-agent
+git clone https://github.com/junichy/share-skill.git
+ln -s "$PWD/share-skill/.agents/skills/blog-agent" ~/.agents/skills/blog-agent
 ```
 
-If `~/.agents/skills/blog-agent` already exists, choose a different local folder
-or move that installation first. Invoke the skill with `$blog-agent` in Codex.
+Run these commands from the directory where you want to keep the clone. If
+`~/.agents/skills/blog-agent` already exists, choose another installation path
+or remove the old installation deliberately before linking. Invoke the skill
+with `$blog-agent` in Codex.
 
 The skill has no required companion skills, MCP servers, paid keyword tools, or
 writing-model API. GSC and project publishing connections are used only when
